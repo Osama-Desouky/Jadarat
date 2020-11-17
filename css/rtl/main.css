@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+body {font-family: 'Cairo', sans-serif;color: #2A2A63;letter-spacing: -0.3px;border-bottom: 10px solid #5091CD;}
+.font-weight-sbold {font-weight: 600!important;}
+@media (min-width: 1400px) {.container {max-width: 1340px;}}
+.color-243C96 {color: #243C96}
+.mh-100{min-height: 100vh}
+svg * {fill: #f0f}
+svg:hover * {fill: #f00}
+.transition{ -webkit-transition: all ease-out .125s;-moz-transition: all  ease-out .125s;-o-transition: all  ease-out .125s;transition: all  ease-out .125s}
+#brandMask {position: fixed;left: 0%;right: 0%;top: 0%;bottom: 0%;background: #2A2A63;z-index: 2;display: none;}
+#whiteMask {position: fixed;left: 0%;right: 0%;top: 0%;bottom: 0%;background: #fff;z-index: 2;display: none;}
+*[id*="lvl1-div"] {position: fixed;left: 0%;right: 0%;top: 0%;bottom: 0%;background: #2A2A63;z-index: 2;display: none;}
+#head{background:#2A2A63 url(../../img/header-bg.svg) no-repeat;background-size: cover;}
+#head .navbar-dark .navbar-nav .nav-link {color: rgba(255,255,255,1);}
+#head .navbar-dark .navbar-nav .nav-link:hover{color: #5091CD;}
+.fs-14{font-size: 14px}
+.fs-15{font-size: 15px}
+.fs-20{font-size: 20px}
+.fs-30{font-size: 30px}
+.fs-35{font-size: 35px}
+.lh-35{line-height: 35px}
+.fast-links a{color: #fff;text-decoration: none}
+.fast-links a:hover{color: #5091CD;}
+.dropdown-toggle::after{width:10px;height: 6px;background: url(../../img/dropdown-arrow.svg) no-repeat;border: 0;background-size: cover;margin-bottom: -3px;}
+#head .navbar-brand img{max-width: 150px;}
+@media (min-width: 992px){#head .navbar-brand img{max-width: 230px;margin-top: -1rem;margin-bottom: 1rem;}}
+.dropdown-menu{background: #5091CD;border-radius: 0;border: none;color: #fff;}
+.dropdown-menu .dropdown-item{color: #fff;}
+.dropdown-item:focus, .dropdown-item:hover {text-decoration: none;background-color: rgb(55, 123, 187);}
+@media (min-width: 992px){
+.dropdown-menu::after{content:"";width: 0;height: 0;border-width: 0 10px 10px 10px;border-color: transparent transparent #5091CD transparent;border-style: solid;position: absolute;top: -10px;right: 40px;}
+.dropdown:hover .dropdown-menu {display: block;margin-top: 0;}
+.dropdown-custom {background: #5091CD;min-width: 38rem;border-radius: 0;border: none;color: #fff;}
+.dropdown-custom::after{content:"";width: 0;height: 0;border-width: 0 10px 10px 10px;border-color: transparent transparent #5091CD transparent;border-style: solid;position: absolute;top: -10px;right: 40px;}
+.dropdown-custom .dropdown-item{display: none!important;}
+}
+.youtube-vedio{overflow: hidden;}
+.youtube-vedio a{display: block;left: 0;right: 0;top: 0;bottom: 0;position: absolute;z-index: 1;}
+.youtube-vedio a img{position: absolute;left: 50%;top: 50%;opacity: .8;transform: translateX(-50%) translateY(-50%);width: 65px;}
+.youtube-vedio a:hover img{opacity: 1;width: 75px;}
+.readmore{color: #243C96;border:1px solid #243C96;font-weight: 600;text-decoration: none;background: #fff url(../../img/readmore-arrow.svg) no-repeat;background-position: right 20px center;}
+.readmore:hover{color: #fff;border:1px solid #5091CD;background: #5091CD;text-decoration: none;background: #5091CD url(../../img/readmore-arrow2.svg) no-repeat;background-position: right 20px center;}
+.modal button.close {background: url(../../img/popup-close.svg) no-repeat center center;opacity: 1;padding: 2rem;margin: 0rem auto -2rem 0rem;z-index: 9;outline: none!important}
+.modal-header{padding: 0}
+.modal-body{padding-top: 0}
+.modal-content {border: 0;border-radius: 0;}
+.modal-header {border: 0;}
+@media (min-width: 1200px){.modal-xl {max-width:1000px;}}
+#social-links {position: fixed;left: 1rem;display: flex;flex-direction: column;top: 50%;transform: translateY(-50%);z-index: 1;}
+#social-links a {width: 38px;height: 38px;border: 1px solid #243c96;text-align: center;left: 38px;display: flex;justify-content: center;border-radius: 50%;margin: 8px 0;-webkit-transition: all ease-out .125s;-moz-transition: all  ease-out .125s;-o-transition: all  ease-out .125s;transition: all  ease-out .125s;background: #fff;}
+#social-links a:hover {background: #243c96;}
+#social-links a:hover img{filter: brightness(100);}
+.onhoverDiv{height: 0;overflow: hidden;position: absolute;bottom: 0}
+*[id*="prnt"]{position: relative;}
+*[id*="prnt"]:hover .onhoverDiv{height: auto;}
+.expanding-box-more{color: #fff;border:1px solid #fff;font-weight: 600;text-decoration: none;background: #2A2A6300 url(../../img/readmore-arrow-white.svg) no-repeat;background-position: right 20px center;display: inline-block;}
+.expanding-box-more:hover{color: #fff;border:1px solid #5091CD;background: #5091CD;text-decoration: none;background: #5091CD url(../../img/readmore-arrow2.svg) no-repeat;background-position: right 20px center;}
+.expanding-box{padding-top:68px;height: 68px;overflow: hidden;bottom: 0;left: 0;right: 0;z-index: 1;}
+.expanding-box:hover .expanding-box-body{opacity: 1;}
+.expanding-box-body{opacity: 0;display: flex;flex-direction: column;justify-content: space-between;height: 100%;overflow: auto}
+.expanding-box-header{position: absolute;top: 0;left: 0;right: 0;}
+@media (min-width: 992px){
+    .expanding-box{position: absolute;}
+    .expanding-box:hover .expanding-box-body{opacity: 1;}
+    .expanding-box-body{overflow: hidden;}
+}
+
+@media screen and (max-width: 800px) {
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+}
+.div-close{position: absolute;left: 0;top: 0}
+.chart-title1{position: absolute;z-index: 2;font-size: 16px;color: #2a2a63;left: 50%;text-align: center;top: 50px;transform: translateX(-50%);font-weight: 700;max-width: 90px;}
+.hoverScaled:hover{transform: scale(1.1);-webkit-box-shadow: 0px 5px 15px 0px rgba(94, 165, 232, 0.7);-moz-box-shadow:    0px 5px 15px 0px rgba(94, 165, 232, 0.7);box-shadow:0px 5px 15px 0px rgba(94, 165, 232, 0.7);}
+.has-right-icon-list{padding-right: 60px;}
+.right-icon-list{position: absolute;right:0;top: -16px;border-left: 1px solid #777B81;width: 50px;padding-left: 10px;}
+.right-icon-list ul,.right-icon-list ul li {padding: 0;margin: 20px 0;display: block;}
+
+.right-icon-list li i {-webkit-transition: all ease-out .125s;-moz-transition: all  ease-out .125s;-o-transition: all  ease-out .125s;transition: all  ease-out .125s;font-size: 12px;position: absolute;right: 100%;font-style: normal;background: #fff;height: 100%;white-space: nowrap;line-height: 30px;padding-left: 0;color: #2A2A63;width: 0;overflow: hidden;z-index: 2;}
+.right-icon-list ul li a:hover i{display: block;padding-left: 5px;padding-right:0;width: auto;}
+
+.right-icon-list ul li a {display: flex;width: 40px;height: 30px;text-align: center;margin: 0;padding: 0;justify-content: center;align-items: center;position: relative;}
+.right-icon-list ul li a img{width: 19px;height: 19px;}
+.right-icon-list ul li a:hover{background: rgb(255 255 255);}
+@media (min-width: 992px){
+    .right-icon-list li i{right: auto;left: 100%;padding-right: 0;}
+    .right-icon-list ul li a:hover i{padding-right: 5px;padding-left: 0;}
+}
+/***************
+SCROLLBAR BASE CSS
+***************/
+.scroll-wrapper.scrollbar-inner > div{max-height: calc( 100vh - 300px )!important;}
+.scroll-wrapper {overflow: hidden !important;padding: 0 !important;position: relative;padding-left: 16px!important;color: #777B81;}
+.scroll-wrapper > .scroll-content {border: none !important;box-sizing: content-box !important;height: auto;left: 0;margin: 0;max-height: none;max-width: none !important;overflow: scroll !important;padding: 0;position: relative !important;top: 0;width: auto !important;}
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {height: 0;width: 0;}
+.scroll-element {display: none;}
+.scroll-element, .scroll-element div {box-sizing: content-box;}
+.scroll-element.scroll-x.scroll-scrollx_visible,.scroll-element.scroll-y.scroll-scrolly_visible {display: block;}
+.scroll-element .scroll-bar,.scroll-element .scroll-arrow {cursor: default;}
+.scroll-textarea {border: 1px solid #cccccc;border-top-color: #999999;}
+.scroll-textarea > .scroll-content {overflow: hidden !important;}
+.scroll-textarea > .scroll-content > textarea {border: none !important;box-sizing: border-box;height: 100% !important;margin: 0;max-height: none !important;max-width: none !important;overflow: scroll !important;outline: none;padding: 2px;position: relative !important;top: 0;width: 100% !important;}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {height: 0;width: 0;}
+/*************** SIMPLE INNER SCROLLBAR ***************/
+.scrollbar-inner > .scroll-element,.scrollbar-inner > .scroll-element div{border: none;margin: 0;padding: 0;position: absolute;z-index: 10;}
+.scrollbar-inner > .scroll-element div {display: block;height: 100%;left: 0;top: 0;width: 100%;}
+.scrollbar-inner > .scroll-element.scroll-x {bottom: 2px;height: 8px;left: 0;width: 100%;}
+.scrollbar-inner > .scroll-element.scroll-y {height: 100%;left: 0px;top: 0;width: 6px;}
+.scrollbar-inner > .scroll-element .scroll-element_outer {overflow: hidden;}
+.scrollbar-inner > .scroll-element .scroll-element_outer,.scrollbar-inner > .scroll-element .scroll-element_track,.scrollbar-inner > .scroll-element .scroll-bar {-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.scrollbar-inner > .scroll-element .scroll-element_track,.scrollbar-inner > .scroll-element .scroll-bar {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";filter: alpha(opacity=40);/* opacity: 0.4; */}
+.scrollbar-inner > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
+.scrollbar-inner > .scroll-element .scroll-bar {background-color: #5091CD;}
+.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #919191; }
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+/*************** SCROLLBAR BASE CSS ***************/
