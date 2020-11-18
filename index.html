@@ -16,10 +16,11 @@
 <body class="">
     <div id="brandMask"></div>
     <div id="whiteMask"></div>
+    <!-- start >> LEVEL 1 -->
     <div id="lvl1-div1" class="">
 
-        <div class="container my-3 position-relative"><a href="javascript:;" onclick="closee('lvl1-div1','brandMask');" class="div-close"><img src="img/Close.svg"
-                /></a>
+        <div class="container my-3 position-relative">
+            <a href="javascript:;" onclick="closeeAll('lvl1');" class="div-close"><img src="img/Close.svg" /></a>
             <div class="has-right-icon-list">
                 <div class="right-icon-list">
                     <ul>
@@ -33,41 +34,40 @@
                 </div>
                 <div class="wow fadeInUp fs-30 text-white" data-wow-duration=".5s" data-wow-delay=".125s"><img src="img/Icon1.svg"
                         style="width: 39px;height: 36px;" class="mr-2">هيكل الإطار</div>
-                <div class="d-none d-lg-block wow fadeIn position-relative" data-wow-duration=".5s" data-wow-delay="0"><span class="chart-title1">القطاع
-                        المالي
-                    </span><img src="img/chart.svg" class="img-fluid" /></div>
-                <div class="d-lg-none d-block text-center text-white fs-20 my-3">القطاع المالي</div>
-                <div class="row text-center">
-                    <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".125s">
-                        <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition">
-                            <div><img src="img/icon4.svg" class="img-fluid" /></div>
-                            <div class="font-weight-bold mt-3">البنوك</div>
+                <div style="height: calc( 100vh - 100px );display: flex;flex-direction: column;justify-content: center;">
+                    <div class="d-none d-lg-block wow fadeIn position-relative" data-wow-duration=".5s" data-wow-delay="0"><span
+                            class="chart-title1">القطاع المالي
+                        </span><img src="img/chart.svg" class="img-fluid" /></div>
+                    <div class="d-lg-none d-block text-center text-white fs-20 my-3">القطاع المالي</div>
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".125s">
+                            <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition as-link" onclick="goAnimation('3','whiteMask','lvl2-div1');">
+                                <div><img src="img/icon4.svg" class="img-fluid" /></div>
+                                <div class="font-weight-bold mt-3">البنوك</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".25s">
-                        <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition">
-                            <div><img src="img/icon5.svg" class="img-fluid" /></div>
-                            <div class="font-weight-bold mt-3">الأوراق المالية</div>
+                        <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".25s">
+                            <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition as-link" onclick="goAnimation('3','whiteMask','lvl2-div2');">
+                                <div><img src="img/icon5.svg" class="img-fluid" /></div>
+                                <div class="font-weight-bold mt-3">الأوراق المالية</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".375s">
-                        <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition">
-                            <div><img src="img/icon6.svg" class="img-fluid" /></div>
-                            <div class="font-weight-bold mt-3">التأمين</div>
+                        <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".375s">
+                            <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition as-link" onclick="goAnimation('3','whiteMask','lvl2-div3');">
+                                <div><img src="img/icon6.svg" class="img-fluid" /></div>
+                                <div class="font-weight-bold mt-3">التأمين</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
-                        <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition">
-                            <div><img src="img/icon7.svg" class="img-fluid" /></div>
-                            <div class="font-weight-bold mt-3">التمويل</div>
+                        <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
+                            <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition as-link" onclick="goAnimation('3','whiteMask','lvl2-div4');">
+                                <div><img src="img/icon7.svg" class="img-fluid" /></div>
+                                <div class="font-weight-bold mt-3">التمويل</div>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-            <a href="javascript:;" onclick="closee('lvl1-div1','brandMask');" class="div-close"><img src="img/Close.svg"
-                /></a>
-
         </div>
 
     </div>
@@ -81,7 +81,7 @@
                     <div class="col-3 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".375s">Content to Reveal Here</div>
                     <div class="col-3 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">Content to Reveal Here</div>
                 </div>
-                <a href="javascript:;" onclick="closee('lvl1-div2','brandMask');">x</a></div>
+                <a href="javascript:;" onclick="closeeAll('lvl1');">x</a></div>
         </h1>
     </div>
     <div id="lvl1-div3">
@@ -94,9 +94,178 @@
                     <div class="col-3 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".375s">Content to Reveal Here</div>
                     <div class="col-3 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">Content to Reveal Here</div>
                 </div>
-                <a href="javascript:;" onclick="closee('lvl1-div3','brandMask');">x</a></div>
+                <a href="javascript:;" onclick="closeeAll('lvl1');">x</a></div>
         </h1>
     </div>
+    <!-- end >> LEVEL 1 -->
+    <!-- start >> LEVEL 2 -->
+    <div id="lvl2-div2" class="section-green">
+
+        <div class="container my-3 position-relative ">
+            <a href="javascript:;" onclick="closeeAll('lvl2');" class="div-close"><img src="img/Close.svg" /></a>
+            <a href="javascript:;" onclick="closee('3','whiteMask','lvl2');" class="div-back"><img src="img/Back.svg" /></a>
+            <div class="has-right-icon-list">
+                <div class="right-icon-list">
+                    <ul>
+                        <li><a href="#"><img src="img/side-Search.svg" /><i>بحث</i></a></li>
+                        <li><a href="#"><img src="img/side-translate.svg" /><i>English</i></a></li>
+                        <li><a href="#"><img src="img/side-guide.svg" /><i>دليل المستخدم</i></a></li>
+                        <li><a href="#"><img src="img/side-faq.svg" /><i>أسئلة شائعة</i></a></li>
+                        <li><a href="#"><img src="img/side-print.svg" /><i>طباعة</i></a></li>
+                        <li><a href="#"><img src="img/side-download.svg" /><i>تحميل الصفحة</i></a></li>
+                    </ul>
+                </div>
+                <div class="breadcrumb-custom">
+                    <div class="bc-c-1 as-link" onclick="closeeTo('3','whiteMask','lvl2','lvl1');"><img src="img/Icon1.svg"/>هيكل الإطار</div>
+                    <div class="bc-c-2">قطاع الأوراق المالية</div>
+                </div>
+                <div class="wow fadeInUp py-lg-4 py-3 fs-30 section-color font-weight-bold" data-wow-duration=".25s" data-wow-delay="0s">قطاع
+                    الأوراق المالية</div>
+                <div class="wow fadeInUp pb-3 fs-14 font-weight-bold" data-wow-duration=".25s" data-wow-delay=".125s">الأقسام
+                    <img src="img/left-arrow.svg" style="height: 14px;width:8px;" /></div>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-6 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".125s">
+                        <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition as-link" onclick="goAnimation('4','whiteMask','lvl3-div1');">
+                            <div class="my-3 section-color">C01</div>
+                            <div class="font-weight-bold mt-3">التصنيف الائتماني</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end >> LEVEL 2 -->
+    <!-- start >> LEVEL 3 -->
+    <div id="lvl3-div1" class="section-green">
+
+        <div class="container my-3 position-relative ">
+            <a href="javascript:;" onclick="closeeAll('lvl3');" class="div-close"><img src="img/Close.svg" /></a>
+            <a href="javascript:;" onclick="closee('4','whiteMask','lvl3');" class="div-back"><img src="img/Back.svg" /></a>
+            <div class="has-right-icon-list">
+                <div class="right-icon-list">
+                    <ul>
+                        <li><a href="#"><img src="img/side-Search.svg" /><i>بحث</i></a></li>
+                        <li><a href="#"><img src="img/side-translate.svg" /><i>English</i></a></li>
+                        <li><a href="#"><img src="img/side-guide.svg" /><i>دليل المستخدم</i></a></li>
+                        <li><a href="#"><img src="img/side-faq.svg" /><i>أسئلة شائعة</i></a></li>
+                        <li><a href="#"><img src="img/side-print.svg" /><i>طباعة</i></a></li>
+                        <li><a href="#"><img src="img/side-download.svg" /><i>تحميل الصفحة</i></a></li>
+                    </ul>
+                </div>
+                <div class="breadcrumb-custom">
+                        <div class="bc-c-1 as-link" onclick="closeeTo('3','whiteMask','lvl3','lvl1');"><img src="img/Icon1.svg"/>هيكل الإطار</div>
+                        <div class="bc-c-2 as-link" onclick="closeeTo('4','whiteMask','lvl3','lvl2');">قطاع الأوراق المالية</div>
+                        <div class="bc-c-3">قسم إدارة الأصول</div>
+                    </div>
+                <div class="wow fadeInUp py-lg-4 py-3 fs-30 section-color font-weight-bold" data-wow-duration=".25s" data-wow-delay="0s">قسم
+                    إدارة الأصول</div>
+                <div>تعريف القسم</div>
+                <div class="wow fadeInUp pb-3 fs-14 font-weight-bold" data-wow-duration=".25s" data-wow-delay=".125s">قائمة
+                    العوائل الوظيفية <img src="img/left-arrow.svg" style="height: 14px;width:8px;" /></div>
+                <div class="row text-center">
+                    <div class="col-lg-2 col-4 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".125s">
+                        <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition as-link" onclick="goAnimation('5','whiteMask','lvl4-div1');">
+                            <div class="my-3 section-color">OS</div>
+                            <div class="font-weight-bold mt-3 fs-14">الإعداد والهيكلة</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end >> LEVEL 3 -->
+    <!-- start >> LEVEL 4 -->
+    <div id="lvl4-div1" class="section-green">
+
+        <div class="container my-3 position-relative ">
+            <a href="javascript:;" onclick="closeeAll('lvl4');" class="div-close"><img src="img/Close.svg" /></a>
+            <a href="javascript:;" onclick="closee('5','whiteMask','lvl4');" class="div-back"><img src="img/Back.svg" /></a>
+            <div class="has-right-icon-list">
+                <div class="right-icon-list">
+                    <ul>
+                        <li><a href="#"><img src="img/side-Search.svg" /><i>بحث</i></a></li>
+                        <li><a href="#"><img src="img/side-translate.svg" /><i>English</i></a></li>
+                        <li><a href="#"><img src="img/side-guide.svg" /><i>دليل المستخدم</i></a></li>
+                        <li><a href="#"><img src="img/side-faq.svg" /><i>أسئلة شائعة</i></a></li>
+                        <li><a href="#"><img src="img/side-print.svg" /><i>طباعة</i></a></li>
+                        <li><a href="#"><img src="img/side-download.svg" /><i>تحميل الصفحة</i></a></li>
+                    </ul>
+                </div>
+                <div class="breadcrumb-custom">
+                        <div class="bc-c-1 as-link" onclick="closeeTo('3','whiteMask','lvl4','lvl1');"><img src="img/Icon1.svg"/>هيكل الإطار</div>
+                        <div class="bc-c-2 as-link" onclick="closeeTo('4','whiteMask','lvl4','lvl2');">قطاع الأوراق المالية</div>
+                        <div class="bc-c-3 as-link" onclick="closeeTo('5','whiteMask','lvl4','lvl3');">قسم إدارة الأصول</div>
+                        <div class="bc-c-4">الإعداد والهيكلة</div>
+                    </div>
+                <div class="wow fadeInUp py-lg-4 py-3 fs-30 section-color font-weight-bold" data-wow-duration=".25s" data-wow-delay="0s">الإعداد
+                    والهيكلة</div>
+                <div>تعريف العائلة الوظيفية
+                </div>
+                <div class="wow fadeInUp pb-3 fs-14 font-weight-bold" data-wow-duration=".25s" data-wow-delay=".125s">قائمة
+                    الأدوار الوظيفية <img src="img/left-arrow.svg" style="height: 14px;width:8px;" /></div>
+                <div class="row text-center">
+                    <div class="col-12 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".125s">
+                        <div class="bg-white rounded p-lg-4 px-2 py-3 my-lg-0 my-3 hoverScaled transition" onclick="goAnimation('6','whiteMask','lvl5-div1');">
+                            <div class="font-weight-bold mt-3 fs-14">COS50</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end >> LEVEL 4 -->
+    <!-- start >> LEVEL 5 -->
+    <div id="lvl5-div1" class="section-green">
+
+        <div class="container my-3 position-relative ">
+            <a href="javascript:;" onclick="closeeAll('lvl5');" class="div-close"><img src="img/Close.svg" /></a>
+            <a href="javascript:;" onclick="closee('6','whiteMask','lvl5');" class="div-back"><img src="img/Back.svg" /></a>
+            <div class="has-right-icon-list">
+                <div class="right-icon-list">
+                    <ul>
+                        <li><a href="#"><img src="img/side-Search.svg" /><i>بحث</i></a></li>
+                        <li><a href="#"><img src="img/side-translate.svg" /><i>English</i></a></li>
+                        <li><a href="#"><img src="img/side-guide.svg" /><i>دليل المستخدم</i></a></li>
+                        <li><a href="#"><img src="img/side-faq.svg" /><i>أسئلة شائعة</i></a></li>
+                        <li><a href="#"><img src="img/side-print.svg" /><i>طباعة</i></a></li>
+                        <li><a href="#"><img src="img/side-download.svg" /><i>تحميل الصفحة</i></a></li>
+                    </ul>
+                </div>
+                <div class="breadcrumb-custom">
+                        <div class="bc-c-1 as-link" onclick="closeeTo('3','whiteMask','lvl5','lvl1');"><img src="img/Icon1.svg"/>هيكل الإطار</div>
+                        <div class="bc-c-2 as-link" onclick="closeeTo('4','whiteMask','lvl5','lvl2');">قطاع الأوراق المالية</div>
+                        <div class="bc-c-3 as-link" onclick="closeeTo('5','whiteMask','lvl5','lvl3');">قسم إدارة الأصول</div>
+                        <div class="bc-c-4 as-link" onclick="closeeTo('6','whiteMask','lvl5','lvl4');">الإعداد والهيكلة</div>
+                        <div class="bc-c-5">مدير الإعداد والهيكلة</div>
+                    </div>
+                <div class="wow fadeInUp py-lg-4 py-3 fs-30 section-color font-weight-bold" data-wow-duration=".25s" data-wow-delay="0s">بطاقة
+                    وصف الدور الوظيفي</div>
+                <div>xxxxxxxxxxx</div>
+                <div class="wow fadeInUp pb-3 fs-14 font-weight-bold" data-wow-duration=".25s" data-wow-delay=".125s">المسؤوليات<img
+                        src="img/left-arrow.svg" style="height: 14px;width:8px;" /></div>
+                <div class="row text-center">
+                    DONE
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end >> LEVEL 5 -->
     <div id="head">
         <div class="container">
             <div class="d-flex fast-links fs-14 justify-content-between justify-content-lg-end pt-3 px-3">
@@ -177,8 +346,8 @@
         <a href="#"><img src="img/logo-youtube.svg" /></a>
         <a href="#"><img src="img/logo-linkedin.svg" /></a>
     </div>
-    <div class="container ">
-        <div class="row py-lg-5 py-3">
+    <div class="container position-relative " id="homeContainer">
+        <div class="row pb-lg-5 py-3">
             <div class="col-lg-6 ">
                 <div class="color-243C96 fs-35 mb-3 font-weight-bold wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".125s">عن
                     جدارات
@@ -251,14 +420,14 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5">
+        <div class="mt-5" id="fixedBottom">
 
             <div class="align-items-end  no-gutters row">
                 <div class="col-md-4">
                     <div class="expanding-box" style="background: #2A2A63 url(img/Section001_bg_art.svg) no-repeat center center;
                     background-size: 80% auto;">
                         <div id="prnt1" class="align-items-center d-flex flex-column justify-content-center p-3 expanding-box-header"><a
-                                href="javascript:;" onclick="goAnimation('prnt1','brandMask','lvl1-div1');" class="align-items-center d-flex font-weight-sbold fs-20 text-white"><img
+                                href="javascript:;" class="align-items-center d-flex font-weight-sbold fs-20 text-white text-decoration-0"><img
                                     src="img/Icon1.svg" style="width: 39px;height: 36px;" class="mr-2">هيكل الإطار</a>
                         </div>
                         <div class="text-white p-3 fs-14 expanding-box-body transition">
@@ -280,7 +449,7 @@
                                 </ul>
                             </div>
 
-                            <div class="p-3 text-center"><a href="javascript:;" onclick="goAnimation('prnt1','brandMask','lvl1-div1');"
+                            <div class="p-3 text-center"><a href="javascript:;" onclick="goAnimation('2','brandMask','lvl1-div1');"
                                     class="expanding-box-more pl-5 pr-3 py-1 transition">المزيد</a></div>
                         </div>
                     </div>
@@ -288,8 +457,8 @@
                 <div class="col-md-4">
                     <div class="expanding-box" style="background:#2C449B url(img/Section002_bg_art.svg) no-repeat center center;
                     background-size: 80% auto;">
-                        <div id="prnt1" class="align-items-center d-flex flex-column justify-content-center p-3 expanding-box-header"><a
-                                href="javascript:;" onclick="goAnimation('prnt1','brandMask','lvl1-div2');" class="align-items-center d-flex font-weight-sbold fs-20 text-white"><img
+                        <div id="prnt2" class="align-items-center d-flex flex-column justify-content-center p-3 expanding-box-header"><a
+                                href="javascript:;" class="align-items-center d-flex font-weight-sbold fs-20 text-white text-decoration-0"><img
                                     src="img/Icon2.svg" style="width: 39px;height: 36px;" class="mr-2">قاموس الجدارات</a>
                         </div>
                         <div class="text-white p-3 fs-14 expanding-box-body transition">
@@ -301,7 +470,7 @@
                                 من الإتقان (تطوير، دعم، تطبيق، قيادة، تشكيل).
                             </div>
 
-                            <div class="p-3 text-center"><a href="javascript:;" onclick="goAnimation('prnt1','brandMask','lvl1-div2');"
+                            <div class="p-3 text-center"><a href="javascript:;" onclick="goAnimation('2','brandMask','lvl1-div2');"
                                     class="expanding-box-more pl-5 pr-3 py-1 transition">المزيد</a></div>
                         </div>
                     </div>
@@ -310,8 +479,8 @@
                 <div class="col-md-4">
                     <div class="expanding-box" style="background:#3D53A4 url(img/Section003_bg_art.svg) no-repeat center center;
                     background-size: 80% auto;">
-                        <div id="prnt1" class="align-items-center d-flex flex-column justify-content-center p-3 expanding-box-header"><a
-                                href="javascript:;" onclick="goAnimation('prnt1','brandMask','lvl1-div3');" class="align-items-center d-flex font-weight-sbold fs-20 text-white"><img
+                        <div id="prnt3" class="align-items-center d-flex flex-column justify-content-center p-3 expanding-box-header"><a
+                                href="javascript:;" class="align-items-center d-flex font-weight-sbold fs-20 text-white text-decoration-0"><img
                                     src="img/Icon3.svg" style="width: 39px;height: 36px;" class="mr-2">المسارات الوظيفية</a>
                         </div>
                         <div class="text-white p-3 fs-14 expanding-box-body transition">
@@ -322,7 +491,7 @@
                                 العمل والمعرفة بمختلف أنواع المنتجات. تعتمد مسارات التقدم الوظيفي على الأداء الفردي والقدرات
                                 والمعرفة والمهارات الفنية المطلوبة للدور.
                             </div>
-                            <div class="p-3 text-center"><a href="javascript:;" onclick="goAnimation('prnt1','brandMask','lvl1-div3');"
+                            <div class="p-3 text-center"><a href="javascript:;" onclick="goAnimation('2','brandMask','lvl1-div3');"
                                     class="expanding-box-more pl-5 pr-3 py-1 transition">المزيد</a></div>
                         </div>
                     </div>
@@ -340,14 +509,43 @@
     <script>
         var wow = new WOW({ mobile: false });
         wow.init();
-        function closee(targetDiv, mask) {
-            $("#" + targetDiv).fadeOut(250);
+        function closeeAll(targetDiv) {
+            var str = targetDiv;
+            var currentLvl = str.substr(3, 1);
+            var i;
+            for (i = currentLvl; i >= 1; i--) {
+                $('[id^=lvl' + i + ']').fadeOut(250);
+                console.log('closing >> lvl' + i);
+            }
+        }
+        function closeeTo(zindx,mask,startDiv,targetDiv) {
+            $("#" + mask).css('z-index', zindx).fadeIn(250);
+
+            var startStr = startDiv;
+            var startLvl = startStr.substr(3, 1);
+            var targetStr = targetDiv;
+            var targetLvl = targetStr.substr(3, 1);
+            var j;
+            for (j = startLvl; j > targetLvl; j--) {
+                $('[id^=lvl' + j + ']').fadeOut(250);
+                console.log('closing >> lvl' + j);
+            }
             $("#" + mask).delay(250).fadeOut(250);
         }
+        function closee(zindx,mask,targetDiv) {
+            $("#" + mask).css('z-index', zindx).fadeIn(250);
+            var str = targetDiv;
+            var currentLvl = str.substr(3, 1);
+            $('[id^=lvl' + currentLvl + ']').delay(250).fadeOut(250);
+            console.log('closing >> lvl' + currentLvl);
+            $("#" + mask).delay(250).fadeOut(250);
 
-        function goAnimation(parent, mask, targetDiv) {
-            $("#" + mask).fadeIn(250);
+        }
+
+        function goAnimation(zindx, mask, targetDiv) {
+            $("#" + mask).css('z-index', zindx).fadeIn(250);
             $("#" + targetDiv).delay(250).fadeIn(250);
+            $("#" + mask).delay(250).fadeOut(250);
             var wow = new WOW({ mobile: false });
             wow.init();
             return (false);
