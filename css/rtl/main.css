@@ -69,7 +69,7 @@ svg:hover * {fill: #f00}
 .modal-body{padding-top: 0}
 .modal-content {border: 0;border-radius: 0;}
 .modal-header {border: 0;}
-@media (min-width: 1200px){.modal-xl {max-width:62.5rem;}}
+@media (min-width: 1200px){.modal-xl {width: 1525px;max-width: 90vw;}}
 #social-links {position: fixed;left: 1rem;display: flex;flex-direction: column;top: 50%;transform: translateY(-50%);z-index: 1;}
 #social-links a {width: 2.375rem;height: 2.375rem;border: 1px solid #243c96;text-align: center;left: 2.375rem;display: flex;justify-content: center;border-radius: 50%;margin: .5rem 0;-webkit-transition: all ease-out .125s;-moz-transition: all  ease-out .125s;-o-transition: all  ease-out .125s;transition: all  ease-out .125s;background: #fff;}
 #social-links a:hover {background: #243c96;}
@@ -176,6 +176,7 @@ svg:hover * {fill: #f00}
 tbody {
     background: #fff;
 }
+.mb-30px{margin-bottom: 30px;}
 /*********
 sections color
 *************/
