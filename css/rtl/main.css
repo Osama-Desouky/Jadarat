@@ -191,7 +191,7 @@ body{border-bottom:20px solid #5091CD}
 }
 .hoverScaled{box-shadow:rgba(0,0,0,.1) 0 0 .375rem}
 .hoverScaled:hover{transform:scale(1.1);-webkit-box-shadow:0 1.3125rem 1.9375rem 0 rgba(94,165,232,0.7);-moz-box-shadow:0 1.3125rem 1.9375rem 0 rgba(94,165,232,0.7);box-shadow:0 1.3125rem 1.9375rem 0 rgba(94,165,232,0.7)}
-.hoverScaled2{box-shadow:0 3px 25px #0000001A}
+.hoverScaled2{box-shadow:0 3px 25px #0000001A;height: 100%;}
 .hoverScaled2:hover{transform:scale(1.1)}
 .has-right-icon-list{padding-right:2.75rem}
 @media (min-width: 576px) {
