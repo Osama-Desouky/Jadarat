@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Group_22350" data-name="Group 22350" transform="translate(-5.5 -92)">
+    <g id="Rectangle_11224" data-name="Rectangle 11224" transform="translate(5.5 92)" fill="#fff" stroke="#eee" stroke-width="2">
+      <rect width="34" height="34" stroke="none"/>
+      <rect x="1" y="1" width="32" height="32" fill="none"/>
+    </g>
+    <path id="facebook-f" d="M15.639,2c-2.676,0-4.245,1.413-4.245,4.634V9.467H8v3.394h3.394v8.146h3.394V12.861H17.5l.679-3.394H14.788V7.208c0-1.213.4-1.814,1.534-1.814h1.86V2.139A20.757,20.757,0,0,0,15.639,2Z" transform="translate(9.5 97)" fill="#243c96"/>
+  </g>
+</svg>
