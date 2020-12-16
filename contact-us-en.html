@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="print" href="css/print.css" />
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <title>Jadarat</title>
@@ -15,6 +16,7 @@
 
 <body class="border-0">
 
+        <div class="print-header text-left"><img src="img/Jadarat_LOGO-popu.svg"></div>
     <div id="head">
         <div class="container">
             <div class="d-flex fast-links fs-14 justify-content-between justify-content-lg-end pt-3 pr-2">
@@ -174,6 +176,7 @@
                         </div>
                         <div class="col-lg-8 order-lg-1">
                             <div class="d-flex flex-column h-100 justify-content-between p-36px">
+                                
                                 <div class="">
                                     <div class="font-weight-bold fs-xl-25 fs-20 text-555555">بيانات الإتصال</div>
                                 </div>
@@ -219,66 +222,75 @@
                                     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                                     tabindex="0"></iframe></div>
                                     <div class="col-md-7 order-md-1">
-                                <div class="p-36px form-custom">
-                                    <div class="font-weight-bold mb-2 text-555555">النوع <span class="text-danger">*</span></div>
-                                    <div class="mb-4">
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadioInline1">استفسار</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadioInline2">اقتراح</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadioInline3">طلب</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadioInline4">شكوى</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadioInline5">أخرى</label>
-                                        </div>
-    
-                                    </div>
-                                    <div class="font-weight-bold mb-2 text-555555">الإسم <span class="text-danger">*</span></div>
-                                    <div class="mb-4">
-                                        <input type="text" class="form-control" placeholder="فضلا أدخل إسمك">
-                                    </div>
-                                    <div class="font-weight-bold mb-2 text-555555">رقم الجوال <span class="text-danger">*</span></div>
-                                    <div class="mb-4">
-                                        <input type="text" class="form-control" placeholder="فضلا أدخل إسمك">
-                                        <div class="form-helper">يرجى إدخال رقم الجوال بهذة الصيغة <span class="text-english">+966
-                                                5 xxx xx xxx</span></div>
-                                    </div>
-                                    <div class="font-weight-bold mb-2 text-555555">البريد الإلكتروني <span class="text-danger">*</span></div>
-                                    <div class="mb-4">
-                                        <input type="email" class="form-control" placeholder="فضلا أدخل عنوان بريدك الإلكتروني">
-                                        <div class="form-helper">مثال: yourname@website.com</div>
-                                    </div>
-                                    <div class="font-weight-bold mb-2 text-555555">عنوان الرسالة <span class="text-danger">*</span></div>
-                                    <div class="mb-4">
-                                        <input type="text" class="form-control" placeholder="فضلا أدخل عنوان الرسالة">
-                                    </div>
-                                    <div class="font-weight-bold mb-2 text-555555">نص الرسالة <span class="text-danger">*</span></div>
-                                    <div class="mb-4">
-                                        <textarea class="form-control">فضلا أدخل نص الرسالة هنا</textarea>
-                                    </div>
-                                    <div class="font-weight-bold mb-2 text-555555">رمز التحقق <span class="text-danger">*</span></div>
-                                    <div class="align-items-end mb-4 row">
-                                        <div class="col-md-6"><input type="text" class="form-control" placeholder="فضلا أدخل الرمز الموجود أمامك"></div>
-                                        <div class="col-md-5 mt-md-0 mt-3"><img src="img/captcha.png"></div>
-    
-                                    </div>
-                                    <div class="mb-4 mt-5">
-                                        <button type="button" class="btn btn-primary">إرسال</button>
-                                        <button type="button" class="btn btn-light mx-3">إلغاء</button>
-    
-                                    </div>
-                                </div>
+                                            <div class="p-36px form-custom">
+                                                    <div class="font-weight-bold mb-2 text-555555">النوع <span class="text-danger">*</span></div>
+                                                    <div class="mb-4 has-error">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline1">استفسار</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline2">اقتراح</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline3">طلب</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline4">شكوى</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline5">أخرى</label>
+                                                        </div>
+                                                        <div class="border-0 p-0 small text-danger">لابد من اختيار النوع</div>
+                    
+                                                    </div>
+                                                    <div class="font-weight-bold mb-2 text-555555">الإسم <span class="text-danger">*</span></div>
+                                                    <div class="mb-4 has-error">
+                                                        <input type="text" class="form-control" placeholder="فضلا أدخل إسمك">
+                                                        <div class="border-0 py-1 small text-danger">لابد من اختيار النوع</div>
+                                                    </div>
+                                                    <div class="font-weight-bold mb-2 text-555555">رقم الجوال <span class="text-danger">*</span></div>
+                                                    <div class="mb-4 has-error">
+                                                        <input type="text" class="form-control" placeholder="فضلا أدخل إسمك"><div class="border-0 py-1 small text-danger">لابد
+                                                            من اختيار النوع</div>
+                                                        <div class="form-helper">يرجى إدخال رقم الجوال بهذة الصيغة <span class="text-english">+966
+                                                                5 xxx xx xxx</span></div>
+                                                    </div>
+                                                    <div class="font-weight-bold mb-2 text-555555">البريد الإلكتروني <span class="text-danger">*</span></div>
+                                                    <div class="mb-4 has-error">
+                                                        <input type="email" class="form-control" placeholder="فضلا أدخل عنوان بريدك الإلكتروني">
+                                                        <div class="border-0 py-1 small text-danger">لابد من اختيار النوع</div>
+                                                        <div class="form-helper">مثال: yourname@website.com</div>
+                                                    </div>
+                                                    <div class="font-weight-bold mb-2 text-555555">عنوان الرسالة <span class="text-danger">*</span></div>
+                                                    <div class="mb-4 has-error">
+                                                        <input type="text" class="form-control" placeholder="فضلا أدخل عنوان الرسالة">
+                                                        <div class="border-0 py-1 small text-danger">لابد من اختيار النوع</div>
+                                                    </div>
+                                                    <div class="font-weight-bold mb-2 text-555555">نص الرسالة <span class="text-danger">*</span></div>
+                                                    <div class="mb-4 has-error">
+                                                        <textarea class="form-control">فضلا أدخل نص الرسالة هنا</textarea><div class="border-0 py-1 small text-danger">لابد
+                                                            من اختيار النوع</div>
+                                                    </div>
+                                                    <div class="font-weight-bold mb-2 text-555555">رمز التحقق <span class="text-danger">*</span></div>
+                                                    <div class="align-items-end mb-4 row">
+                                                        <div class="col-md-6"><input type="text" class="form-control" placeholder="فضلا أدخل الرمز الموجود أمامك"></div>
+                                                        <div class="col-md-5 mt-md-0 mt-3"><img src="img/captcha.png"></div>
+                                                        <div class="col-12">
+                                                            <div class="border-0 py-1 small text-danger">لابد من اختيار النوع</div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="mb-4 mt-5">
+                                                        <button type="button" class="btn btn-primary">إرسال</button>
+                                                        <button type="button" class="btn btn-light mx-3">إلغاء</button>
+                    
+                                                    </div>
+                                                </div>
                             </div>
                             
                         </div>
@@ -291,6 +303,7 @@
             </div>
         </div>
 
+        <div class="print-footer text-center">جميع الحقوق محفوظة © 2020 للأكاديمية المالية</div>
     <div class="footer text-lg-left text-center">
         <div class="container pt-5 pb-4">
             <div class="row">

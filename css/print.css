@@ -1,0 +1,12 @@
+.print-footer,.print-header{display: block;}
+#inner-left-functions,#breadcrumb,.footer,#head,#social-links,.masarat,.div-back,.div-close{display: none;}
+.inner-content{background: transparent}
+.text-white,.text-777B81{color: #000!important}
+.h-100 {height: auto!important;min-height: 100%}
+[id*="lvl1-div"],[id*="lvl2-div"],[id*="lvl3-div"],[id*="lvl4-div"],[id*="lvl5-div"]{bottom: auto!important;position: relative;}
+.rotba-5{color: #000!important}
+.rotba-4{color: #000!important}
+.rotba-3{color: #000!important}
+.rotba-2{color: #000!important}
+.rotba-1{color: #000!important}
+.modal.show .modal-dialog{width: 100%!important;max-width: 100%!important;}
