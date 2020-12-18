@@ -1690,7 +1690,10 @@
         $(".bc-c-last").click(function () {
             $(this).parent().toggleClass('opened');
         });
-        
+        if ($('#carouselExampleeControls .carousel-item').length == 1) {
+            $('.carousel-control-next').hide();
+            $('.carousel-control-prev').hide();
+        }
     </script>
     <script src="js/jquery.scrollbar.js"></script>
     <script>jQuery(document).ready(function () {
