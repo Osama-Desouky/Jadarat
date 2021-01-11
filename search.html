@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" class="h-100" dir="rtl">
+<html lang="ar" class="h-100 fs-rg" dir="rtl">
 
 <head>
     <!-- Required meta tags -->
@@ -143,14 +143,14 @@
 
     </div>
     <div id="inner-left-functions">
-        <span>
-            <img src="img/increase.svg" />
-            <i>تكبير الخط</i>
-        </span>
-        <span href="#">
-            <img src="img/decrease.svg" />
-            <i>تصغير الخط</i>
-        </span>
+            <span id="font-increase">
+                    <img src="img/increase.svg" />
+                    <i>تكبير الخط</i>
+                </span>
+                <span id="font-decrease">
+                    <img src="img/decrease.svg" />
+                    <i>تصغير الخط</i>
+                </span>
         <span href="#">
             <img src="img/functions-printer.svg" />
             <i>طباعة</i>
@@ -401,6 +401,18 @@
 
         })
     </script>
+    <script>
+            $("#font-increase").click(function () {
+                if ($("html").hasClass("fs-xxl")) { $("html").removeClass("fs-xxl").addClass("fs-xxxl"); }
+                if ($("html").hasClass("fs-xl")) { $("html").removeClass("fs-xl").addClass("fs-xxl"); }
+                if ($("html").hasClass("fs-rg")) { $("html").removeClass("fs-rg").addClass("fs-xl"); }
+            });
+            $("#font-decrease").click(function () {
+                if ($("html").hasClass("fs-xl")) { $("html").removeClass("fs-xl").addClass("fs-rg"); }
+                if ($("html").hasClass("fs-xxl")) { $("html").removeClass("fs-xxl").addClass("fs-xl"); }
+                if ($("html").hasClass("fs-xxxl")) { $("html").removeClass("fs-xxxl").addClass("fs-xxl"); }
+            });
+        </script>
 </body>
 
 </html>

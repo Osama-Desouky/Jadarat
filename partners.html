@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" class="h-100" dir="rtl">
+<html lang="ar" class="h-100 fs-rg" dir="rtl">
 
 <head>
     <!-- Required meta tags -->
@@ -15,7 +15,7 @@
 </head>
 
 <body class="border-0">
-        <div class="print-header text-left"><img src="img/Jadarat_LOGO-popu.svg"></div>
+    <div class="print-header text-left"><img src="img/Jadarat_LOGO-popu.svg"></div>
     <div id="head">
         <div class="container">
             <div class="d-flex fast-links fs-14 justify-content-between justify-content-lg-end pt-3 pr-2">
@@ -143,11 +143,11 @@
 
     </div>
     <div id="inner-left-functions">
-        <span>
+        <span id="font-increase">
             <img src="img/increase.svg" />
             <i>تكبير الخط</i>
         </span>
-        <span href="#">
+        <span id="font-decrease">
             <img src="img/decrease.svg" />
             <i>تصغير الخط</i>
         </span>
@@ -460,7 +460,8 @@
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                                     <div class="bg-white logo-shadow ">
                                         <img src="img/logos/logo-39.png" class="mb-2" />
-                                        <p class="text-777B81 font-weight-bold text-center">شركة الشرق الأوسط للاستثمار المالي (ميفك)</p>
+                                        <p class="text-777B81 font-weight-bold text-center">شركة الشرق الأوسط للاستثمار المالي
+                                            (ميفك)</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -592,7 +593,8 @@
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                                     <div class="bg-white logo-shadow ">
                                         <img src="img/logos/logo-58.png" class="mb-2" />
-                                        <p class="text-777B81 font-weight-bold text-center">شركة فال لوساطة التأمين وإعادة التأمين التعاوني</p>
+                                        <p class="text-777B81 font-weight-bold text-center">شركة فال لوساطة التأمين وإعادة
+                                            التأمين التعاوني</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -640,13 +642,15 @@
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                                     <div class="bg-white logo-shadow ">
                                         <img src="img/logos/logo-66.png" class="mb-2" />
-                                        <p class="text-777B81 font-weight-bold text-center">شركة المتوسط والخليج للتأمين وإعادة التأمين التعاوني (ميدغلف)</p>
+                                        <p class="text-777B81 font-weight-bold text-center">شركة المتوسط والخليج للتأمين
+                                            وإعادة التأمين التعاوني (ميدغلف)</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                                     <div class="bg-white logo-shadow ">
                                         <img src="img/logos/logo-67.png" class="mb-2" />
-                                        <p class="text-777B81 font-weight-bold text-center">شركة المتوسط والخليج للتأمين وإعادة التأمين التعاوني (ميدغلف)</p>
+                                        <p class="text-777B81 font-weight-bold text-center">شركة المتوسط والخليج للتأمين
+                                            وإعادة التأمين التعاوني (ميدغلف)</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -720,6 +724,18 @@
     <script>jQuery(document).ready(function () {
             jQuery('.scrollbar-inner').scrollbar();
         });</script>
+    <script>
+        $("#font-increase").click(function () {
+            if ($("html").hasClass("fs-xxl")) { $("html").removeClass("fs-xxl").addClass("fs-xxxl"); }
+            if ($("html").hasClass("fs-xl")) { $("html").removeClass("fs-xl").addClass("fs-xxl"); }
+            if ($("html").hasClass("fs-rg")) { $("html").removeClass("fs-rg").addClass("fs-xl"); }
+        });
+        $("#font-decrease").click(function () {
+            if ($("html").hasClass("fs-xl")) { $("html").removeClass("fs-xl").addClass("fs-rg"); }
+            if ($("html").hasClass("fs-xxl")) { $("html").removeClass("fs-xxl").addClass("fs-xl"); }
+            if ($("html").hasClass("fs-xxxl")) { $("html").removeClass("fs-xxxl").addClass("fs-xxl"); }
+        });
+    </script>
 </body>
 
 </html>
