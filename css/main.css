@@ -632,7 +632,7 @@ select.custom-select {background: url(../img/select-arrow.png) #F3F3F3 no-repeat
 .search-item:hover::after{height: 114px;}
 .search-sector {border: 2px solid #ECEEF1;margin: 24px 0 0 24px;border-radius: 8px;font-size: 12px;font-weight: 600;padding: 7px;width: 100px;text-align: center;color: #878A8F;}
 .search-content {padding: 24px;width: calc( 100% - 100px );}
-.search-content-title {color: #243C96;font-size: 17px;font-weight: 700;}
+.search-content-title {color: #243C96;font-size: 1.0625rem;font-weight: 700;}
 .search-content-text {color: #777B81;}
 .search-content-link {overflow: hidden;white-space: nowrap;}
 .pagination .page-link{border:0;background:transparent;font-weight:700;color: #5091cd;}
@@ -673,58 +673,7 @@ filter: grayscale(100%) contrast(1.4);}
 }
 .has-error .form-control{border-bottom: 2px solid rgb(255, 0, 0);}
 
-/* font sizing */
-/*xl*/
-.fs-xl #breadcrumb{font-size:18px;}
-.fs-xl .inner-content{font-size:18px;}
-.fs-xl .fs-20{font-size:22px;}
-.fs-xl .fs-15{font-size:17px;}
-.fs-xl .btn{font-size:19px;}
-.fs-xl .card-header a{font-size:20px;}
-.fs-xl .form-control{font-size:18px;}
-.fs-xl .search-sector{font-size:13px;}
-@media (min-width: 768px){.fs-xl .card-header a{font-size:27px;}}
-@media (min-width: 1200px){
-    .fs-xl .fs-xl-25 {font-size: 27px;}
-    .fs-xl .fs-xl-17 {font-size: 19px;}
-    .fs-xl .fs-xl-26 {font-size: 28px;}
-    .fs-xl .fs-xl-18 {font-size: 20px;}
-}
-@media (min-width: 1400px){.fs-xl .fs-xxl-30 {font-size: 32px;}}
-/*xxl*/
-.fs-xxl #breadcrumb{font-size:20px;}
-.fs-xxl .inner-content{font-size:20px;}
-.fs-xxl .fs-20{font-size:24px;}
-.fs-xxl .fs-15{font-size:19px;}
-.fs-xxl .btn{font-size:21px;}
-.fs-xxl .card-header a{font-size:22px;}
-.fs-xxl .form-control{font-size:20px;}
-.fs-xxl .search-sector{font-size:14px;}
-@media (min-width: 768px){.fs-xxl .card-header a{font-size:29px;}}
-@media (min-width: 1200px){
-    .fs-xxl .fs-xl-25 {font-size: 29px;}
-    .fs-xxl .fs-xl-17 {font-size: 21px;}
-    .fs-xxl .fs-xl-26 {font-size: 30px;}
-    .fs-xxl .fs-xl-18 {font-size: 22px;}
-}
-@media (min-width: 1400px){.fs-xxl .fs-xxl-30 {font-size: 34px;}}
-/*xxxl*/
-.fs-xxxl #breadcrumb{font-size:24px;}
-.fs-xxxl .inner-content{font-size:24px;}
-.fs-xxxl .fs-20{font-size:28px;}
-.fs-xxxl .fs-15{font-size:23px;}
-.fs-xxxl .btn{font-size:25px;}
-.fs-xxxl .card-header a{font-size:26px;}
-.fs-xxxl .form-control{font-size:24px;}
-.fs-xxxl .search-sector{font-size:23px;}
-@media (min-width: 768px){.fs-xxxl .card-header a{font-size:33px;}}
-@media (min-width: 1200px){
-    .fs-xxxl .fs-xl-25 {font-size: 33px;}
-    .fs-xxxl .fs-xl-17 {font-size: 25px;}
-    .fs-xxxl .fs-xl-26 {font-size: 34px;}
-    .fs-xxxl .fs-xl-18 {font-size: 26px;}
-}
-@media (min-width: 1400px){.fs-xxxl .fs-xxl-30 {font-size: 38px;}}
+
 
 .print-footer,.print-header{display: none;}
 
@@ -751,3 +700,79 @@ filter: grayscale(100%) contrast(1.4);}
 #faqs .card-header a.collapsed img[src*=".svg"]{filter: brightness(1)}
 
 .bg-hover-F4F9FE.bg-white:hover{background: #F4F9FE!important;text-decoration: none}
+/* *******************************************
+** font sizing
+** ******************************************/
+/*xl*/
+.fs-xl #breadcrumb{font-size:18px;}
+.fs-xl .inner-content{font-size:18px;}
+.fs-xl .fs-20{font-size:22px;}
+.fs-xl .fs-15{font-size:17px;}
+.fs-xl .btn{font-size:19px;}
+.fs-xl .card-header a{font-size:20px;}
+.fs-xl .form-control{font-size:18px;}
+.fs-xl .search-sector{font-size:13px;}
+.fs-xl #faqs .card-header a ,.fs-xl .search-content-title{font-size: 18px;}
+@media (min-width: 768px){
+    .fs-xl .card-header a{font-size:27px;}
+    .fs-xl #faqs .card-header a ,.fs-xl .search-content-title{font-size: 19px;}
+}
+@media (min-width: 1200px){
+    .fs-xl .fs-xl-25 {font-size: 27px;}
+    .fs-xl .fs-xl-17 {font-size: 19px;}
+    .fs-xl .fs-xl-26 {font-size: 28px;}
+    .fs-xl .fs-xl-18 {font-size: 20px;}
+    .fs-xl #faqs .card-header a,.fs-xl .search-content-title {font-size: 20px;}
+}
+@media (min-width: 1400px){
+    .fs-xl .fs-xxl-30 {font-size: 32px;}
+    .fs-xl #faqs .card-header a ,.fs-xl .search-content-title{font-size: 21px;}
+}
+
+/*xxl*/
+.fs-xxl #breadcrumb{font-size:20px;}
+.fs-xxl .inner-content{font-size:20px;}
+.fs-xxl .fs-20{font-size:24px;}
+.fs-xxl .fs-15{font-size:19px;}
+.fs-xxl .btn{font-size:21px;}
+.fs-xxl .card-header a{font-size:22px;}
+.fs-xxl .form-control{font-size:20px;}
+.fs-xxl .search-sector{font-size:14px;}
+.fs-xxl #faqs .card-header a ,.fs-xxl .search-content-title{font-size: 19px;}
+@media (min-width: 768px){
+    .fs-xxl .card-header a{font-size:29px;}
+    .fs-xxl #faqs .card-header a ,.fs-xxl .search-content-title{font-size: 20px;}}
+@media (min-width: 1200px){
+    .fs-xxl .fs-xl-25 {font-size: 29px;}
+    .fs-xxl .fs-xl-17 {font-size: 21px;}
+    .fs-xxl .fs-xl-26 {font-size: 30px;}
+    .fs-xxl .fs-xl-18 {font-size: 22px;}
+    .fs-xxl #faqs .card-header a,.fs-xxl .search-content-title {font-size: 22px;}
+}
+@media (min-width: 1400px){.fs-xxl .fs-xxl-30 {font-size: 34px;}
+.fs-xxl #faqs .card-header a,.fs-xxl .search-content-title {font-size: 24px;}}
+
+/*xxxl*/
+.fs-xxxl #breadcrumb{font-size:24px;}
+.fs-xxxl .inner-content{font-size:24px;}
+.fs-xxxl .fs-20{font-size:28px;}
+.fs-xxxl .fs-15{font-size:23px;}
+.fs-xxxl .btn{font-size:25px;}
+.fs-xxxl .card-header a{font-size:26px;}
+.fs-xxxl .form-control{font-size:24px;}
+.fs-xxxl .search-sector{font-size:23px;}
+.fs-xxxl #faqs .card-header a ,.fs-xxxl .search-content-title{font-size: 21px;}
+@media (min-width: 768px){
+    .fs-xxxl .card-header a{font-size:33px;}
+    .fs-xxxl #faqs .card-header a,.fs-xxxl .search-content-title {font-size: 23px;}}
+@media (min-width: 1200px){
+    .fs-xxxl .fs-xl-25 {font-size: 33px;}
+    .fs-xxxl .fs-xl-17 {font-size: 25px;}
+    .fs-xxxl .fs-xl-26 {font-size: 34px;}
+    .fs-xxxl .fs-xl-18 {font-size: 26px;}
+    .fs-xxxl #faqs .card-header a ,.fs-xxxl .search-content-title{font-size: 25px;}
+}
+@media (min-width: 1400px){
+    .fs-xxxl .fs-xxl-30 {font-size: 38px;}
+    .fs-xxxl #faqs .card-header a ,.fs-xxxl .search-content-title{font-size: 28px;}
+}
