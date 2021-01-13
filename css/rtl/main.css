@@ -181,7 +181,7 @@ body{border-bottom:20px solid #5091CD}
 .expanding-box-body{font-size:15px}
 }
 @media (min-width: 1400px) {
-.expanding-box:hover .expanding-box-body{overflow:hidden!important}
+/*.expanding-box:hover .expanding-box-body{overflow:hidden!important}*/
 .expanding-box{padding-top:105px;height:95px}
 .expanding-box-header{height:95px}
 }
@@ -775,3 +775,5 @@ filter: grayscale(100%) contrast(1.4);}
     .fs-xxxl .fs-xxl-30 {font-size: 38px;}
     .fs-xxxl #faqs .card-header a ,.fs-xxxl .search-content-title{font-size: 28px;}
 }
+.carousel-indicators li{height: 26px;text-indent: 0!important;line-height:24px;width:24px;border-radius:4px;;background:#f5f5f5;color:#000}
+.carousel-indicators .active{background:#508fdc;color:#fff}
